@@ -1,0 +1,19 @@
+paths = [
+  "/mnt/glftpd/site/archive/X264-ENG-1080",
+  "/mnt/glftpd/site/archive/X265-ENG-2160"
+]
+
+
+score_patterns = [
+  { pattern = "BluRay.*x26[45].*", score = 900 },
+  { pattern = "BluRay.*h26[45].*", score = 500 },
+  { pattern = "WEB", score = 800 },
+  { pattern = "DUBBED", score = -50 },
+  { pattern = "INTERNAL", score = 50 },
+  { pattern = "PROPER", score = 100 },
+  { pattern = ".DV.", score = -500 },
+  { pattern = ".HDR.", score = -400 },
+  { pattern = ".*DV.HDR.*", score = +350 },
+  { pattern = ".*TS.LD.*", score = 70 },
+  { pattern = ".*UNRATED.*", score = 50 }
+]
