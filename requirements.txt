@@ -1,0 +1,4 @@
+# Requirements for the directory duplicates management script
+tomli>=2.0.1           # For TOML parsing (if Python < 3.11 or tomllib is not available)
+colorama>=0.4.6        # For colored terminal output
+guessit>=3.7.1         # For parsing and canonicalizing directory names
